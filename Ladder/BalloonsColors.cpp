@@ -13,11 +13,13 @@ int main()
 		for(int j=1;j<n;j++){
 			cin>>a;
 		}
-		if (a==y) eflag= true;
+		if (a==y)  eflag= true;
 		if(bflag & eflag) cout<<"BOTH"<<endl;
 		else if (bflag) cout<<"EASY"<<endl;
 		else if (eflag) cout<<"HARD"<<endl;
 		else cout<<"OKAY"<<endl;
+		bflag=false;
+		eflag=false;
 	}
 
 	return 0;
